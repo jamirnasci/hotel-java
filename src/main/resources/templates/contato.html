@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Hotel - Contato</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/contato.css}">
+</head>
+<body>
+    <header>
+        <h1>Entre em Contato</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Início</a></li>
+                <li><a href="quartos">Quartos</a></li>
+                <li><a href="reservas">Reservas</a></li>
+                <li><a href="sobre">Sobre</a></li>
+                <li><a href="contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Informações de Contato</h2>
+        <p>Entre em contato conosco se tiver alguma dúvida ou necessidade de assistência. Estamos sempre prontos para ajudar!</p>
+        
+        <div class="contact-info">
+            <h3>Endereço</h3>
+            <p>Rua do Hotel, 123</p>
+            <p>Cidade, Estado</p>
+            
+            <h3>Telefone</h3>
+            <p>(XX) XXXX-XXXX</p>
+            
+            <h3>Email</h3>
+            <p>contato@hotel.com</p>
+        </div>
+        
+        <div class="contact-form">
+            <h3>Formulário de Contato</h3>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Sistema de Hotel. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

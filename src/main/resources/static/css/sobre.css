@@ -1,0 +1,86 @@
+/* styles.css */
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos da seção de informações de contato */
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info h3 {
+    margin-top: 10px;
+}
+
+/* Estilos do formulário de contato */
+.contact-form label, .contact-form input, .contact-form textarea, .contact-form button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}

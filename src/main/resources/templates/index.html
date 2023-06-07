@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Hotel</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+<body>
+    <header>
+        <h1>Hotel Java</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="/">Início</a></li>
+            <li><a href="quartos">Quartos</a></li>
+            <li><a href="reservas">Reservas</a></li>
+            <li><a href="sobre">Sobre</a></li>
+            <li><a href="contato">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <h2>Seja bem-vindo ao nosso hotel!</h2>
+        <p>Oferecemos quartos confortáveis e serviços de qualidade.</p>
+        <p>Entre em contato para fazer sua reserva!</p>
+    </section>
+    <div class="slider" id="slider">
+        <img class="img-slider" id="img-slider" src="https://www.queroviajarmais.com/wp-content/uploads/2021/09/trade-hotel-825x569.png" alt="">
+        <h3 class="description" id="description">Descrição slider</h3>
+    </div>
+    <footer>
+        <p>&copy; 2023 Sistema de Hotel. Todos os direitos reservados.</p>
+    </footer>
+    <script th:src="@{/js/slider.js}"></script>
+</body>
+
+</html>
