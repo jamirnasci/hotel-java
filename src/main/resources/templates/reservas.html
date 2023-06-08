@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Hotel - Reservas</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/base.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/reservas.css}">
+</head>
+<body>
+    <header>
+        <h1>Faça sua Reserva</h1>
+    </header>
+        <nav>
+            <ul>
+                <li><a href="/">Início</a></li>
+                <li><a href="quartos">Quartos</a></li>
+                <li><a href="reservas">Reservas</a></li>
+                <li><a href="sobre">Sobre</a></li>
+                <li><a href="contato">Contato</a></li>
+            </ul>
+        </nav>
+    <section>
+        <form>
+        <h2>Formulário de Reserva</h2>
+            <label for="checkin">Data de Check-in:</label>
+            <input type="date" id="checkin" name="checkin" required>
+            
+            <label for="checkout">Data de Check-out:</label>
+            <input type="date" id="checkout" name="checkout" required>
+            
+            <label for="guests">Número de Hóspedes:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+            
+            <button type="submit">Reservar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Sistema de Hotel. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

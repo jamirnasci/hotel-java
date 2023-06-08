@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Java - Listagem de Quartos</title>
+    
+    <link rel="stylesheet" type="text/css" th:href="@{/css/base.css}">    
+    <link rel="stylesheet" type="text/css" th:href="@{/css/quartos.css}">
+</head>
+<body>
+    <header>
+        <h1>Listagem de Quartos</h1>
+    </header>
+            <nav>
+            <ul>
+                <li><a href="/">Início</a></li>
+                <li><a href="quartos">Quartos</a></li>
+                <li><a href="reservas">Reservas</a></li>
+                <li><a href="sobre">Sobre</a></li>
+                <li><a href="contato">Contato</a></li>
+            </ul>
+        </nav>
+    
+        <h2>Quartos Disponíveis</h2>
+    <section>
+        
+        <ul class="room-list">
+            <li>
+            	<div>
+                	<h3>Quarto Luxo</h3>
+	                <p>Este quarto oferece uma experiência de luxo com vistas deslumbrantes. Possui cama king-size, banheiro privativo, TV de tela plana, ar-condicionado e Wi-Fi gratuito.</p>
+	                <p>Preço por noite: <b class="price">R$ 500</b></p>
+	                <b>Disponíveis: 10</b>
+                	<button class="reservar-btn">Reservar</button>
+                </div>
+                <img class="quarto-img-room" alt="" src="https://www.queroviajarmais.com/wp-content/uploads/2021/09/trade-hotel-825x569.png">
+            </li>
+            <li>
+            	<div>
+	                <h3>Quarto Executivo</h3>
+	                <p>Este quarto é perfeito para viajantes a negócios. Possui uma área de trabalho espaçosa, acesso à internet de alta velocidade, cafeteira e serviço de quarto 24 horas.</p>
+	                <p>Preço por noite: <b class="price">R$ 400</b></p>
+	                <b>Disponíveis: 10</b>
+	                <button class="reservar-btn">Reservar</button>
+                </div>
+                <img class="quarto-img-room" alt="" src="https://www.queroviajarmais.com/wp-content/uploads/2021/09/trade-hotel-825x569.png">
+            </li>
+            <li>
+            	<div>
+	                <h3>Suíte Presidencial</h3>
+	                <p>A suíte presidencial é a escolha perfeita para ocasiões especiais. Possui uma sala de estar elegante, quarto separado, banheira de hidromassagem e serviço de mordomo pessoal.</p>
+	                <p>Preço por noite: <b class="price">R$ 1000</b></p>
+	                <b>Disponíveis: 10</b>
+	                <button class="reservar-btn">Reservar</button>
+                </div>
+                <img class="quarto-img-room" alt="" src="https://www.queroviajarmais.com/wp-content/uploads/2021/09/trade-hotel-825x569.png">
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Sistema de Hotel. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

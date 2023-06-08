@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+h1 {
+    margin: 0;
+}
+h2{
+	margin:10px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.room-list {
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	text-align:left;
+    list-style-type: none;
+    margin: 10px;
+    width: 80%;
+    height: 100%;
+    background-color: lightgray;
+    overflow-y: scroll;
+}
+
+.room-list li {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.room-list div {
+	width:90%;
+}
+.room-list div > *{
+	margin-top:10px;
+}
+.room-list h3 {
+    margin: 0;
+}
+
+.room-list p {
+    margin: 10px;
+}
+
+.price{
+    color:green;
+}
+.quarto-img-room{
+	height: 200px;
+	width: 250px;
+}
+.reservar-btn{
+	display:block;
+	padding:15px;
+	margin:5px;
+	background:linear-gradient(45deg, #333, gray);
+	border:none;
+	font-size:1.5rem;
+	color:white;
+	border-radius:30px;
+	cursor:pointer;
+}
