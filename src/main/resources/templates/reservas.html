@@ -20,19 +20,18 @@
             </ul>
         </nav>
     <section>
-        <form>
-        <h2>Formulário de Reserva</h2>
-            <label for="checkin">Data de Check-in:</label>
-            <input type="date" id="checkin" name="checkin" required>
-            
-            <label for="checkout">Data de Check-out:</label>
-            <input type="date" id="checkout" name="checkout" required>
-            
-            <label for="guests">Número de Hóspedes:</label>
-            <input type="number" id="guests" name="guests" min="1" required>
-            
-            <button type="submit">Reservar</button>
-        </form>
+		<ul>
+			<li th:each="qo : ${quartosOcupados}">
+				<div>
+					<h2 th:text="${qo.quartoNome}">quarto nome</h2>
+					<p th:text="${qo.nomeCliente}">cliente nome</p>
+					<b th:text="${qo.checkin}">checkin</b> - 
+					<b th:text="${qo.checkout}">checkout</b>
+					<p>Quarto Nº <span th:text="${qo.numero}"></span></p>
+				</div>
+				<img id="img-quarto" src="https://www.queroviajarmais.com/wp-content/uploads/2021/09/trade-hotel-825x569.png">
+			</li>
+		</ul>
     </section>
 
     <footer>

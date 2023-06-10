@@ -14,16 +14,29 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-
-form {
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
-	align-items:center;
-    max-width: 400px;
-    margin: 0 auto;
+section > ul {
+	width: 70%;
+	height:90%;
+	list-style-type: none;
+	overflow-y:scroll;
 }
-
+section > ul > li {
+	display:flex;
+	flex-direction: row;
+	align-items:center;
+	align-content:center;
+	justify-content:space-between;
+	margin:10px;
+	background-color:burlywood;
+	text-align: left;
+}
+section > ul > li > *{
+	margin:10px;
+}
+#img-quarto{
+	height:90%;
+	width:10%;
+}
 label {
     display: block;
     margin-bottom: 5px;
